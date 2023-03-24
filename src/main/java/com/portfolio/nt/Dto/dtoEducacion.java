@@ -8,15 +8,25 @@ public class dtoEducacion {
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    @NotBlank
+    private String imagen;
+    @NotBlank
+    private String inicio;
+    @NotBlank
+    private String fin;
 
     public dtoEducacion() {
     }
 
-    public dtoEducacion(String nombreE, String descripcionE) {
+    public dtoEducacion(String nombreE, String descripcionE, String imagen, String inicio, String fin) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.imagen = imagen;
+        this.inicio = inicio;
+        this.fin = fin;
     }
 
+    
     public String getNombreE() {
         return nombreE;
     }
@@ -31,6 +41,30 @@ public class dtoEducacion {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
+    public String getInicio() {
+        return inicio;
+    }
+
+    public void setInicio(String inicio) {
+        this.inicio = inicio;
+    }
+
+    public String getFin() {
+        return fin;
+    }
+
+    public void setFin(String fin) {
+        this.fin = fin;
     }
     
     
